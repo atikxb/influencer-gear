@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin-top: 30px;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.sec-padding {
+    padding: 100px 0px;
+}
+
+.sec-padding-bottom {
+    padding-bottom: 100px;
+}
+
+.banner {
+    padding-top: 100px;
+    justify-content: space-between;
+}
+
+.banner:hover .banner-img img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.banner .banner-text h1 {
+    font-size: 70px;
+    font-weight: 900;
+    padding-right: 30px;
+}
+
+.banner .banner-text p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.button {
+    background: #e91e63;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.button i {
+    margin-left: 20px;
+}
+
+.banner-img img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.products {
+    flex: 33.33%;
+    padding: 20px;
+}
+
+.product-box {
+    padding: 20px;
+    box-shadow: 0px 0px 60px 0px #c5c5c5;
+    border-radius: 10px;
+}
+
+.product-box h2 {
+    margin: 10px 0px;
+    font-size: 30px;
+}
+
+.product-box h4 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.product-box p {
+    font-weight: 600;
+    color: rgb(112, 112, 112);
+    margin-bottom: 5px;
+}
+
+.product-box .stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-box .stars i {
+    color: orange;
+}
+
+.product-box .stars p {
+    margin-left: 10px;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.seemore {
+    color: hotpink;
+    font-weight: 900;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #0a0826;
+    padding: 100px 0px;
+    text-align: center;
+    color: lavender;
+}
+
+footer h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+footer p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.social-media i {
+    background: #22203b;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.features {
+    flex: 25%;
+    padding: 10px;
+}
+
+.features .feature-box {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 60px 0px #e3e3e3;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.features .feature-box i {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    background: #22203b;
+    font-size: 30px;
+    color: #fff;
+    padding: 25px;
+}
+
+.features .feature-box h3 {
+    margin-left: 20px;
+}
+
+/* Tablet responsive css */
+
+@media only screen and (max-width: 992px) {
+    body {
+        margin-top: 50px;
+    }
+
+    .container,
+  .flex-content {
+        width: 90%;
+    }
+
+    .banner .banner-text h1 {
+        font-size: 40px;
+    }
+
+    .banner .banner-text p {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+
+    .sec-padding {
+        padding: 80px 0px;
+    }
+
+    .products,
+  .features {
+        flex: 50% !important;
+        max-width: 50%;
+    }
+
+    .product-box {
+        padding: 12px;
+    }
+}
+
+/* Mobile responsive css */
+
+@media only screen and (max-width: 500px) {
+    .logo {
+        font-size: 30px;
+        display: block;
+        margin: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .flex-content {
+        flex-direction: column;
+    }
+
+    .products, .features {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .product-box {
+        margin: 20px 0px;
+    }
+
+    .banner {
+        text-align: center;
+    }
+
+    .banner .banner-text h1 {
+        font-size: 23px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .banner .banner-text p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 13px 30px;
+    }
+
+    .banner-img img {
+        margin-top: 60px;
+    }
+
+    .title {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .product-box h2,
+  .product-box h4 {
+        font-size: 25px;
+    }
+
+    footer h1 {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    body {
+        margin-top: 20px;
+    }
+}
